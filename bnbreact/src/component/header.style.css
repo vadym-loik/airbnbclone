@@ -1,0 +1,37 @@
+/* HEADER */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
+}
+
+.search {
+  /* position: relative; */
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: right;
+}
+
+.search-input {
+  width: 100%;
+  /* border: none; */
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+  width: 25px;
+  position: absolute;
+  padding: 12px;
+}
