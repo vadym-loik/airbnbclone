@@ -6,6 +6,7 @@ import img5 from '../assets/img5.webp';
 import img6 from '../assets/img6.webp';
 import img7 from '../assets/img7.webp';
 import like from '../assets/like.png';
+import { v4 as uuidv4 } from 'uuid';
 
 import './main.style.css';
 
@@ -47,6 +48,8 @@ const data = [
   },
 ];
 
+console.log(uuidv4());
+
 const Main = () => {
   return (
     <div className="container">
@@ -54,7 +57,7 @@ const Main = () => {
         <div className="main-wrap">
           {data.map((item) => {
             return (
-              <div className="card">
+              <div key={uuidv4()} className="card">
                 <img className="card-img" src={item.photos} alt="house" />
                 <img className="card-icon" src={item.like} alt="like" />
                 <p className="card-text">{item.name}</p>
