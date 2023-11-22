@@ -1,6 +1,6 @@
 import logo from '../assets/logo.png';
 import searchicon from '../assets/searchicon.png';
-import './header.style.css';
+import './header.css';
 
 const Header = (props) => {
   return (
@@ -10,9 +10,9 @@ const Header = (props) => {
           <img src={logo} alt="logo AirBnb" width="150" />
           <div className="search">
             <input className="search-input" type="text" />
-            <img className="search-icon" src={searchicon} />
+            <img className="search-icon" src={searchicon} alt="" />
           </div>
-          <a href="" className="header-link">
+          <a href="https://www.airbnb.com/" className="header-link">
             Metter mon logement sur Airbnb
           </a>
         </div>

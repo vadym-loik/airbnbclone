@@ -8,7 +8,7 @@ import img7 from '../assets/img7.webp';
 import like from '../assets/like.png';
 import { v4 as uuidv4 } from 'uuid';
 
-import './main.style.css';
+import './main.css';
 
 const data = [
   {
@@ -47,8 +47,6 @@ const data = [
     name: 'Stege, Danemark',
   },
 ];
-
-console.log(uuidv4());
 
 const Main = () => {
   return (
