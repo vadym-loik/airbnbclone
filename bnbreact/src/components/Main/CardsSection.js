@@ -1,14 +1,14 @@
-import img1 from '../assets/img1.webp';
-import img2 from '../assets/img2.webp';
-import img3 from '../assets/img3.webp';
-import img4 from '../assets/img4.webp';
-import img5 from '../assets/img5.webp';
-import img6 from '../assets/img6.webp';
-import img7 from '../assets/img7.webp';
-import like from '../assets/like.png';
+import img1 from '../../assets/img1.webp';
+import img2 from '../../assets/img2.webp';
+import img3 from '../../assets/img3.webp';
+import img4 from '../../assets/img4.webp';
+import img5 from '../../assets/img5.webp';
+import img6 from '../../assets/img6.webp';
+import img7 from '../../assets/img7.webp';
+import like from '../../assets/like.png';
 import { v4 as uuidv4 } from 'uuid';
 
-import './main.css';
+import './cardsSection.css';
 
 const data = [
   {
@@ -48,7 +48,7 @@ const data = [
   },
 ];
 
-const Main = () => {
+const CardsSection = () => {
   return (
     <div className="container">
       <main className="main">
@@ -68,4 +68,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default CardsSection;
