@@ -2,9 +2,7 @@ import logo from '../../assets/logo.png';
 import searchicon from '../../assets/searchicon.png';
 import './header.css';
 
-const Header = (props) => {
-  console.log(props.name);
-
+const Header = () => {
   return (
     <div>
       <div className="container">

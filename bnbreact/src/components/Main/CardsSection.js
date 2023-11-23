@@ -9,8 +9,9 @@ import like from '../../assets/like.png';
 import { v4 as uuidv4 } from 'uuid';
 
 import './cardsSection.css';
+import Card from '../Card/Card';
 
-const data = [
+const cardsData = [
   {
     photos: img1,
     like: like,
@@ -50,21 +51,15 @@ const data = [
 
 const CardsSection = () => {
   return (
-    <div className="container">
+    <section className="container">
       <main className="main">
         <div className="main-wrap">
-          {data.map((item) => {
-            return (
-              <div key={uuidv4()} className="card">
-                <img className="card-img" src={item.photos} alt="house" />
-                <img className="card-icon" src={item.like} alt="like" />
-                <p className="card-text">{item.name}</p>
-              </div>
-            );
+          {cardsData.map((item) => {
+            return <Card key={uuidv4()} cardItem={item} />;
           })}
         </div>
       </main>
-    </div>
+    </section>
   );
 };
 
